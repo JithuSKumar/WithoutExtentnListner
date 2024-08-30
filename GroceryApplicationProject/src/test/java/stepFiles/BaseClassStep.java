@@ -6,7 +6,6 @@ import org.testng.annotations.Parameters;
 import com.aventstack.extentreports.ExtentTest;
 
 import utilities.ExcelUtilities;
-import utilities.ExtentReportUtilities;
 import utilities.ScreenShotUtilities;
 
 import java.io.FileInputStream;

@@ -25,7 +25,7 @@ public class BaseClassStep {
 	String userName = ExcelUtilities.getString(1, 0,"LoginPage");
 	String password = ExcelUtilities.getString(1, 1,"LoginPage");
 	ScreenShotUtilities screenShotUtilities;
-	ExtentReportUtilities extentReportUtilities;
+	//ExtentReportUtilities extentReportUtilities;
 	ExtentTest extentTest;
 	
 	public static Properties properties;
@@ -41,8 +41,8 @@ public class BaseClassStep {
 	@Parameters("Browser")
 	public void beforeMethod(String browserName) throws IOException
 	{
-		extentReportUtilities = new ExtentReportUtilities();
-		extentTest = extentReportUtilities.createTest("Name");
+	//	extentReportUtilities = new ExtentReportUtilities();
+		//extentTest = extentReportUtilities.createTest("Name");
 		testBasics();
 		if (browserName.equals("chrome"))
 		{
